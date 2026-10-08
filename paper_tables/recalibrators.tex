@@ -1,0 +1,19 @@
+\begin{tabular}{ll ccc ccc c}
+\toprule
+& & \multicolumn{3}{c}{Average rank $\downarrow$} & \multicolumn{3}{c}{Largest estimate (\%) $\uparrow$} & Time \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+& Recalibrator & $L_1$ & $L_2$ & squared & $L_1$ & $L_2$ & squared & [ms/1k] \\
+\midrule
+\multirow{6}{*}{\rotatebox{90}{Binary}} & \textbf{WS-CatBoost} & \textbf{3.15} & -- & \textbf{2.82} & 19 & -- & \textbf{31} & 1634 \\
+ & Beta & 3.29 & -- & 3.06 & 12 & -- & 21 & 3.1 \\
+ & Quadratic & 3.32 & -- & 3.19 & 14 & -- & 13 & 3.5 \\
+ & Isotonic & 3.52 & -- & 3.51 & 17 & -- & 18 & 5.5 \\
+ & Uniform & 3.67 & -- & 4.02 & \textbf{23} & -- & 11 & 0.44 \\
+ & Quantile & 4.06 & -- & 4.40 & 15 & -- & 6 & 0.62 \\
+\midrule
+\multirow{4}{*}{\rotatebox{90}{Multiclass}} & \textbf{WS-CatBoost} & \textbf{2.01} & \textbf{1.98} & \textbf{1.98} & \textbf{47} & \textbf{48} & \textbf{46} & 2564 \\
+ & SMS & 2.42 & 2.37 & 2.50 & 24 & 21 & 23 & 106 \\
+ & SVS & 2.74 & 2.82 & 2.61 & 13 & 12 & 11 & 33.0 \\
+ & TS & 2.84 & 2.83 & 2.91 & 17 & 19 & 19 & 9.3 \\
+\bottomrule
+\end{tabular}

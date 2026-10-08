@@ -1,0 +1,25 @@
+\begin{tabular}{l ccc ccc}
+\toprule
+& \multicolumn{3}{c}{$\mathrm{CE}_{|\cdot|}$} & \multicolumn{3}{c}{$\mathrm{CE}_{(\cdot)^2}$} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Estimator & Spearman $\uparrow$ & pairs (\%) & top-1 (\%) & Spearman $\uparrow$ & pairs (\%) & top-1 (\%) \\
+\midrule
+Smooth-ECE & \textbf{0.73{\scriptsize$\pm$0.06}} & 81 & 36 & -- & -- & -- \\
+Isotonic-ECE & 0.72{\scriptsize$\pm$0.06} & \textbf{81} & \textbf{53} & \textbf{0.66{\scriptsize$\pm$0.05}} & \textbf{77} & \textbf{44} \\
+V-ECE (Beta) & 0.64{\scriptsize$\pm$0.06} & 76 & 34 & 0.62{\scriptsize$\pm$0.05} & 72 & 27 \\
+Uniform-ECE & 0.70{\scriptsize$\pm$0.06} & 80 & 44 & 0.56{\scriptsize$\pm$0.06} & 72 & 27 \\
+Isotonic-IS & 0.63{\scriptsize$\pm$0.07} & 77 & 30 & 0.62{\scriptsize$\pm$0.05} & 75 & 27 \\
+\textbf{V-ECE (Default)} & 0.62{\scriptsize$\pm$0.06} & 75 & 38 & 0.63{\scriptsize$\pm$0.06} & 75 & 31 \\
+V-ECE (Quadratic) & 0.65{\scriptsize$\pm$0.05} & 76 & 33 & 0.58{\scriptsize$\pm$0.07} & 73 & 28 \\
+Quantile-ECE & 0.64{\scriptsize$\pm$0.06} & 77 & 45 & 0.56{\scriptsize$\pm$0.07} & 74 & 33 \\
+V-ECE (Uniform) & 0.59{\scriptsize$\pm$0.06} & 73 & 20 & 0.57{\scriptsize$\pm$0.07} & 65 & 17 \\
+Uniform-IS & 0.63{\scriptsize$\pm$0.06} & 75 & 31 & 0.50{\scriptsize$\pm$0.07} & 70 & 23 \\
+Debiased-ECE & -- & -- & -- & 0.55{\scriptsize$\pm$0.06} & 72 & 29 \\
+V-ECE (Isotonic) & 0.57{\scriptsize$\pm$0.08} & 74 & 25 & 0.53{\scriptsize$\pm$0.06} & 69 & 20 \\
+V-ECE (TS) & 0.49{\scriptsize$\pm$0.07} & 71 & 22 & 0.50{\scriptsize$\pm$0.08} & 69 & 22 \\
+V-ECE (KDE) & 0.52{\scriptsize$\pm$0.06} & 71 & 25 & 0.44{\scriptsize$\pm$0.09} & 59 & 17 \\
+Quantile-IS & 0.46{\scriptsize$\pm$0.08} & 69 & 35 & 0.48{\scriptsize$\pm$0.07} & 63 & 17 \\
+V-ECE (Quantile) & 0.42{\scriptsize$\pm$0.07} & 66 & 27 & 0.51{\scriptsize$\pm$0.08} & 58 & 14 \\
+KDE-ECE & 0.56{\scriptsize$\pm$0.06} & 73 & 30 & 0.31{\scriptsize$\pm$0.07} & 62 & 21 \\
+\bottomrule
+\end{tabular}

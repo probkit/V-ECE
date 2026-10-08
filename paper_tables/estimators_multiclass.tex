@@ -1,0 +1,13 @@
+\begin{tabular}{l cccc cccc cccc r}
+\toprule
+& \multicolumn{4}{c}{$\mathrm{CE}_{\|\cdot\|_1}$} & \multicolumn{4}{c}{$\mathrm{CE}_{\|\cdot\|_2}$} & \multicolumn{4}{c}{$\mathrm{CE}_{\|\cdot\|_2^2}$} & Time \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9} \cmidrule(lr){10-13}
+Estimator & NAE $\downarrow$ & NMAE $\downarrow$ & ratio & over & NAE $\downarrow$ & NMAE $\downarrow$ & ratio & over & NAE $\downarrow$ & NMAE $\downarrow$ & ratio & over & [ms/1k] \\
+\midrule
+\textbf{V-ECE (Default)} & \textbf{0.28} & \textbf{27} & 0.72 & 10 & \textbf{0.28} & \textbf{27} & 0.71 & 10 & \textbf{0.16} & \textbf{44} & 0.30 & 5 & 2403 \\
+V-ECE (SMS) & 0.33 & 38 & 0.65 & 11 & 0.32 & 38 & 0.67 & 10 & 0.18 & 58 & 0.14 & 5 & 98.8 \\
+V-ECE (TS) & 0.37 & 45 & 0.55 & 8 & 0.37 & 45 & 0.55 & 8 & 0.21 & 63 & 0.04 & 3 & 11.7 \\
+V-ECE (KDE) & 0.42 & 45 & 0.50 & 5 & 0.41 & 43 & 0.50 & 5 & 0.30 & 88 & 0.00 & 1 & 45.0 \\
+KDE-ECE & 0.90 & 111 & 2.34 & 99 & 0.91 & 116 & 2.40 & 99 & 0.96 & 295 & 7.47 & 99 & 43.1 \\
+\bottomrule
+\end{tabular}

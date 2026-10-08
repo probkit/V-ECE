@@ -1,0 +1,16 @@
+# Benchmarks and figures
+numpy>=1.25
+scipy>=1.11
+pandas>=2.2
+h5py>=3.9
+scikit-learn>=1.8 # CalibratedClassifierCV(method="temperature"), sklearn.frozen
+catboost>=1.2
+torch>=2.2
+probmetrics==1.3.0 # baseline recalibrators (TS, SVS, SMS, histogram binning, ...)
+pytorch-minimize>=0.1 # BFGS solver of probmetrics' SVS/SMS
+betacal>=1.1 # Beta calibration
+matplotlib>=3.8
+tqdm>=4.64
+
+# Semi-synthetic ground truth only (make_ground_truth.py)
+tabicl==2.0.3
